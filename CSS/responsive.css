@@ -232,3 +232,80 @@
         position: static !important;
     }
 }
+/* Fix header overlapping hero/banner only on Home and Projects pages */
+@media (max-width: 992px) {
+
+    body.home-page .header,
+    body.projects-page .header {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        width: 100% !important;
+        background: #ffffff !important;
+        z-index: 1000;
+    }
+
+    body.home-page .hero,
+    body.projects-page .page-banner {
+        margin-top: 0 !important;
+        padding-top: 60px;
+    }
+
+    body.home-page .site-logo,
+    body.projects-page .site-logo {
+        position: static !important;
+    }
+
+    body.home-page .navbar,
+    body.projects-page .navbar {
+        position: static !important;
+    }
+}
+/* Home and Projects: keep header above the hero/banner on mobile */
+@media (max-width: 992px) {
+    body.home-page .header,
+    body.projects-page .header {
+        position: relative !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        background: #ffffff !important;
+        z-index: 1000 !important;
+    }
+
+    body.home-page .header .container,
+    body.projects-page .header .container {
+        min-height: 72px;
+    }
+
+    body.home-page .site-logo,
+    body.projects-page .site-logo {
+        position: static !important;
+        transform: none !important;
+        z-index: auto !important;
+    }
+
+    body.home-page .site-logo img,
+    body.projects-page .site-logo img {
+        display: block;
+        width: auto;
+        max-width: 145px;
+        height: auto;
+    }
+
+    body.home-page .navbar,
+    body.projects-page .navbar {
+        position: static !important;
+        top: auto !important;
+        left: auto !important;
+        right: auto !important;
+        width: 100% !important;
+        transform: none !important;
+    }
+
+    body.home-page .hero,
+    body.projects-page .page-banner {
+        margin-top: 0 !important;
+    }
+}
