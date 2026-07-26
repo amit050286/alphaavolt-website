@@ -3,28 +3,28 @@
 =========================== */
 
 document.addEventListener("DOMContentLoaded", () => {
-
     const menuToggle = document.querySelector(".menu-toggle");
     const navbar = document.querySelector(".navbar");
 
     if (menuToggle && navbar) {
-
         menuToggle.addEventListener("click", () => {
+            const isOpen = navbar.classList.toggle("open");
 
-            const open = navbar.classList.toggle("open");
-
-            menuToggle.setAttribute("aria-expanded", open);
+            menuToggle.setAttribute(
+                "aria-expanded",
+                String(isOpen)
+            );
 
             const icon = menuToggle.querySelector("i");
 
             if (icon) {
-                icon.className = open
+                icon.className = isOpen
                     ? "fa-solid fa-xmark"
                     : "fa-solid fa-bars";
             }
         });
 
-        navbar.querySelectorAll("a").forEach(link => {
+        navbar.querySelectorAll("a").forEach((link) => {
             link.addEventListener("click", () => {
                 navbar.classList.remove("open");
                 menuToggle.setAttribute("aria-expanded", "false");
@@ -45,11 +45,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const backToTop = document.getElementById("backToTop");
 
     if (backToTop) {
-
-        window.addEventListener("scroll", () => {
+        const updateBackToTop = () => {
             backToTop.style.display =
                 window.scrollY > 350 ? "flex" : "none";
-        });
+        };
+
+        window.addEventListener("scroll", updateBackToTop);
+
+        updateBackToTop();
 
         backToTop.addEventListener("click", () => {
             window.scrollTo({
@@ -58,5 +61,4 @@ document.addEventListener("DOMContentLoaded", () => {
             });
         });
     }
-
 });
