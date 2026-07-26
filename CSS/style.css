@@ -3244,47 +3244,41 @@ padding-top:90px;
         grid-template-columns: 1fr !important;
     }
 }
-/* ===== FINAL LOGO FIX ===== */
+/* ===== HEADER LOGO — CLEAN FIX ===== */
 
-.header .logo {
+.header {
+    overflow: visible !important;
+}
+
+.header-container {
+    min-height: 88px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    overflow: visible;
+}
+
+/* ===== Larger Header Logo ===== */
+
+.site-logo {
+    display: flex;
+    align-items: center;
+    width: 380px;
+    height: 230px;
+    flex: 0 0 380px;
+}
+
+.site-logo img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
     display: block;
-    width: 310px;
-    height: 72px;
-    overflow: hidden;
-    flex-shrink: 0;
-}
-
-.header .logo img {
-    width: 310px !important;
-    height: 72px !important;
-    object-fit: cover !important;
-    object-position: center 52% !important;
-    display: block !important;
-    transform: none !important;
-}
-
-/* Prevent scroll script from resizing it */
-.header.scrolled .logo img {
-    width: 310px !important;
-    height: 72px !important;
-}
-
-/* Footer logo */
-.footer-logo {
-    width: 260px !important;
-    height: 100px !important;
-    object-fit: cover !important;
-    object-position: center 52% !important;
 }
 
 @media (max-width: 768px) {
-    .header .logo {
-        width: 220px;
+    .site-logo {
+        width: 240px;
         height: 60px;
-    }
-
-    .header .logo img {
-        width: 220px !important;
-        height: 60px !important;
+        flex: 0 0 240px;
     }
 }
