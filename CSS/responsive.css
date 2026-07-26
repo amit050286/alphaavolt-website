@@ -86,3 +86,77 @@ html body a.whatsapp-float:hover {
         height: 31px !important;
     }
 }
+/* WhatsApp button */
+
+html body a.whatsapp-float{
+    position:fixed !important;
+    right:22px !important;
+    bottom:92px !important;
+    width:58px !important;
+    height:58px !important;
+    display:flex !important;
+    align-items:center !important;
+    justify-content:center !important;
+    background:#25d366 !important;
+    color:#fff !important;
+    border-radius:50% !important;
+    box-shadow:0 5px 18px rgba(0,0,0,.3) !important;
+    text-decoration:none !important;
+    visibility:visible !important;
+    opacity:1 !important;
+    z-index:99999 !important;
+}
+
+html body a.whatsapp-float svg{
+    width:34px !important;
+    height:34px !important;
+    display:block !important;
+    fill:#fff !important;
+}
+
+/* Back-to-top button */
+
+#backToTop{
+    position:fixed;
+    right:22px;
+    bottom:22px;
+    width:50px;
+    height:50px;
+    border:none;
+    border-radius:50%;
+    background:#0b4ea2;
+    color:#fff;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    font-size:20px;
+    cursor:pointer;
+    box-shadow:0 5px 18px rgba(0,0,0,.3);
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:.3s;
+    z-index:99998;
+}
+
+#backToTop.show{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+@media(max-width:768px){
+    html body a.whatsapp-float{
+        right:16px !important;
+        bottom:82px !important;
+        width:54px !important;
+        height:54px !important;
+    }
+
+    #backToTop{
+        right:16px;
+        bottom:16px;
+        width:48px;
+        height:48px;
+    }
+}

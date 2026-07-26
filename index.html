@@ -29,7 +29,42 @@
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
 </head>
+<!-- Floating WhatsApp Button -->
+<a href="https://wa.me/919975645311?text=Hello%20Alphaavolt%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with Alphaavolt on WhatsApp">
 
+    <svg viewBox="0 0 32 32" aria-hidden="true">
+        <path fill="currentColor"
+            d="M16.04 2.003c-7.72 0-13.99 6.26-13.99 13.98 0 2.46.64 4.86 1.86 6.97L1.94 30l7.22-1.89a13.94 13.94 0 0 0 6.87 1.75h.01c7.71 0 13.99-6.27 13.99-13.99S23.75 2.003 16.04 2.003zm0 25.5h-.01a11.6 11.6 0 0 1-5.91-1.62l-.42-.25-4.29 1.13 1.15-4.18-.27-.43a11.59 11.59 0 1 1 9.75 5.35zm6.36-8.68c-.35-.18-2.06-1.02-2.38-1.13-.32-.12-.55-.18-.78.17-.23.35-.9 1.13-1.1 1.36-.2.23-.41.26-.76.09-.35-.18-1.47-.54-2.8-1.73a10.48 10.48 0 0 1-1.94-2.41c-.2-.35-.02-.54.15-.71.16-.16.35-.41.52-.61.17-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.78-1.89-1.07-2.59-.28-.68-.57-.59-.78-.6h-.67c-.23 0-.61.09-.93.44-.32.35-1.22 1.19-1.22 2.91 0 1.71 1.25 3.37 1.42 3.6.18.23 2.46 3.76 5.96 5.27.83.36 1.48.57 1.99.73.84.27 1.6.23 2.2.14.67-.1 2.06-.84 2.35-1.65.29-.81.29-1.51.2-1.65-.08-.15-.31-.23-.66-.41z"/>
+    </svg>
+</a>
+<!-- Back To Top Button -->
+<button id="backToTop" type="button" aria-label="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+</button>
+<script>
+const backToTop = document.getElementById("backToTop");
+
+if (backToTop) {
+    window.addEventListener("scroll", function () {
+        if (window.scrollY > 300) {
+            backToTop.classList.add("show");
+        } else {
+            backToTop.classList.remove("show");
+        }
+    });
+
+    backToTop.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+}
+</script>
 <body>
 
 <header class="header">
@@ -650,27 +685,6 @@
 </footer>
 
 <!-- Floating WhatsApp -->
-
-<a href="https://wa.me/919975645311?text=Hello%20Alphaavolt%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
-   class="whatsapp-float"
-   target="_blank"
-   rel="noopener noreferrer"
-   aria-label="Chat with Alphaavolt on WhatsApp">
-
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path fill="currentColor"
-            d="M16.04 2.003c-7.72 0-13.99 6.26-13.99 13.98 0 2.46.64 4.86 1.86 6.97L1.94 30l7.22-1.89a13.94 13.94 0 0 0 6.87 1.75h.01c7.71 0 13.99-6.27 13.99-13.99S23.75 2.003 16.04 2.003zm0 25.5h-.01a11.6 11.6 0 0 1-5.91-1.62l-.42-.25-4.29 1.13 1.15-4.18-.27-.43a11.59 11.59 0 1 1 9.75 5.35zm6.36-8.68c-.35-.18-2.06-1.02-2.38-1.13-.32-.12-.55-.18-.78.17-.23.35-.9 1.13-1.1 1.36-.2.23-.41.26-.76.09-.35-.18-1.47-.54-2.8-1.73a10.48 10.48 0 0 1-1.94-2.41c-.2-.35-.02-.54.15-.71.16-.16.35-.41.52-.61.17-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.78-1.89-1.07-2.59-.28-.68-.57-.59-.78-.6h-.67c-.23 0-.61.09-.93.44-.32.35-1.22 1.19-1.22 2.91 0 1.71 1.25 3.37 1.42 3.6.18.23 2.46 3.76 5.96 5.27.83.36 1.48.57 1.99.73.84.27 1.6.23 2.2.14.67-.1 2.06-.84 2.35-1.65.29-.81.29-1.51.2-1.65-.08-.15-.31-.23-.66-.41z"/>
-    </svg>
-
-</a>
-
-<!-- Back To Top -->
-
-<button id="backToTop">
-
-    <i class="fa-solid fa-arrow-up"></i>
-
-</button>
 
 <script src="JS/main.js"></script>
 <script src="JS/script.js"></script>
