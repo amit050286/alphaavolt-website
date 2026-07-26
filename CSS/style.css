@@ -1390,3 +1390,38 @@ p {
         border-bottom: 1px solid #e5eaf1;
     }
 }
+.service-page-grid {
+    align-items: stretch;
+}
+
+.service-detail-card {
+    min-width: 0;
+    height: 100%;
+}
+
+.service-detail-card > div {
+    min-width: 0;
+    overflow-wrap: anywhere;
+    word-break: normal;
+}
+
+.service-detail-card h3,
+.service-detail-card p,
+.service-detail-card li {
+    position: static;
+    height: auto;
+    min-height: 0;
+    white-space: normal;
+    overflow: visible;
+}
+
+@media (max-width: 768px) {
+    .service-detail-card {
+        grid-template-columns: 1fr;
+    }
+
+    .service-detail-card > img {
+        height: 230px;
+        min-height: 230px;
+    }
+}
