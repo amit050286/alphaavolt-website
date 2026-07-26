@@ -1187,3 +1187,15 @@ p {
         width: 250px;
     }
 }
+/* Mobile Logo */
+@media (max-width: 768px) {
+    .site-logo,
+    .logo {
+        width: 220px;
+        height: auto;
+    }
+
+    .header {
+        height: 80px;
+    }
+}
