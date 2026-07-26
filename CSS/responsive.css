@@ -309,3 +309,18 @@
         margin-top: 0 !important;
     }
 }
+/* Existing responsive.css code */
+
+@media (max-width: 480px) {
+    ...
+}
+
+/* Paste it here ↓ */
+
+@media (max-width: 992px) {
+    .site-logo img {
+        width: 180px !important;
+        max-width: none !important;
+        height: auto !important;
+    }
+}
