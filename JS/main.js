@@ -1,21 +1,20 @@
-/* ===========================
-   Mobile Navigation
-=========================== */
-
-document.addEventListener("DOMContentLoaded", () => {
-    const menuToggle = document.querySelector(".menu-toggle");
+document.addEventListener("DOMContentLoaded", function () {
+    const menuButton = document.querySelector(".menu-toggle");
     const navbar = document.querySelector(".navbar");
 
-    if (menuToggle && navbar) {
-        menuToggle.addEventListener("click", () => {
+    if (menuButton && navbar) {
+        menuButton.addEventListener("click", function (event) {
+            event.preventDefault();
+            event.stopPropagation();
+
             const isOpen = navbar.classList.toggle("open");
 
-            menuToggle.setAttribute(
+            menuButton.setAttribute(
                 "aria-expanded",
                 String(isOpen)
             );
 
-            const icon = menuToggle.querySelector("i");
+            const icon = menuButton.querySelector("i");
 
             if (icon) {
                 icon.className = isOpen
@@ -24,12 +23,12 @@ document.addEventListener("DOMContentLoaded", () => {
             }
         });
 
-        navbar.querySelectorAll("a").forEach((link) => {
-            link.addEventListener("click", () => {
+        navbar.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
                 navbar.classList.remove("open");
-                menuToggle.setAttribute("aria-expanded", "false");
+                menuButton.setAttribute("aria-expanded", "false");
 
-                const icon = menuToggle.querySelector("i");
+                const icon = menuButton.querySelector("i");
 
                 if (icon) {
                     icon.className = "fa-solid fa-bars";
@@ -38,23 +37,18 @@ document.addEventListener("DOMContentLoaded", () => {
         });
     }
 
-    /* ===========================
-       Back To Top
-    =========================== */
-
     const backToTop = document.getElementById("backToTop");
 
     if (backToTop) {
-        const updateBackToTop = () => {
+        function updateBackToTop() {
             backToTop.style.display =
                 window.scrollY > 350 ? "flex" : "none";
-        };
+        }
 
         window.addEventListener("scroll", updateBackToTop);
-
         updateBackToTop();
 
-        backToTop.addEventListener("click", () => {
+        backToTop.addEventListener("click", function () {
             window.scrollTo({
                 top: 0,
                 behavior: "smooth"

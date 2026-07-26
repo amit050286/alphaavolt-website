@@ -1314,4 +1314,79 @@ p {
     .logo img {
         transform: scale(1.2);
     }
+}/* Fix Services Card Text Overlap */
+
+.service-card {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.service-card h3 {
+    min-height: 60px;
+    line-height: 1.4;
+    margin-bottom: 12px;
+}
+
+.service-card p {
+    flex: 1;
+    line-height: 1.7;
+}
+
+.service-grid {
+    align-items: stretch;
+}
+@media (max-width: 768px) {
+    .service-card h3 {
+        min-height: auto;
+    }
+
+    .service-card {
+        height: auto;
+    }
+}@media (max-width: 768px) {
+    .menu-toggle {
+        display: flex !important;
+        align-items: center;
+        justify-content: center;
+        width: 44px;
+        height: 44px;
+        cursor: pointer;
+        position: relative;
+        z-index: 10001;
+    }
+
+    .navbar {
+        display: none !important;
+        position: fixed;
+        top: 82px;
+        left: 0;
+        width: 100%;
+        background: #ffffff;
+        padding: 10px 4%;
+        z-index: 10000;
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.15);
+    }
+
+    .navbar.open {
+        display: block !important;
+    }
+
+    .navbar ul {
+        display: flex;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 0;
+    }
+
+    .navbar li,
+    .navbar a {
+        width: 100%;
+    }
+
+    .navbar a {
+        display: block;
+        padding: 14px 12px;
+        border-bottom: 1px solid #e5eaf1;
+    }
 }
