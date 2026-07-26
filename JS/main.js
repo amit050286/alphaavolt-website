@@ -39,22 +39,37 @@ if (backToTop) {
 
 /* Gallery filters */
 
-document.querySelectorAll(".filter-buttons button").forEach(button => {
-    button.addEventListener("click", () => {
-        document
-            .querySelectorAll(".filter-buttons button")
-            .forEach(item => item.classList.remove("active"));
+document.addEventListener("DOMContentLoaded", function () {
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navbar = document.querySelector(".navbar");
 
-        button.classList.add("active");
+    if (menuToggle && navbar) {
+        menuToggle.addEventListener("click", function () {
+            navbar.classList.toggle("active");
 
-        const filter = button.dataset.filter || "all";
+            const isOpen = navbar.classList.contains("active");
+            menuToggle.setAttribute("aria-expanded", isOpen);
 
-        document.querySelectorAll(".gallery-item").forEach(item => {
-            item.classList.toggle(
-                "hidden",
-                filter !== "all" &&
-                item.dataset.category !== filter
-            );
+            const icon = menuToggle.querySelector("i");
+
+            if (icon) {
+                icon.classList.toggle("fa-bars", !isOpen);
+                icon.classList.toggle("fa-xmark", isOpen);
+            }
         });
-    });
+
+        navbar.querySelectorAll("a").forEach(function (link) {
+            link.addEventListener("click", function () {
+                navbar.classList.remove("active");
+                menuToggle.setAttribute("aria-expanded", "false");
+
+                const icon = menuToggle.querySelector("i");
+
+                if (icon) {
+                    icon.classList.add("fa-bars");
+                    icon.classList.remove("fa-xmark");
+                }
+            });
+        });
+    }
 });
