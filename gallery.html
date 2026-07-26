@@ -1,110 +1,259 @@
 <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Gallery | Alphaavolt Infratech Pvt. Ltd.</title>
-        <meta name="description" content="Project and installation gallery for Alphaavolt engineering services.">
-        <link rel="icon" href="assets/favicon.ico">
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
-        <link rel="stylesheet" href="CSS/style.css?v=6">
-        <link rel="stylesheet" href="CSS/animations.css?v=6">
-        <link rel="stylesheet" href="CSS/responsive.css?v=6">
-    </head>
-    <body>
-    <header class="header">
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Alphaavolt Infratech Pvt. Ltd.</title>
+    <meta name="description"
+          content="Explore Alphaavolt electrical products, systems and engineering solutions.">
+
+    <link rel="icon" href="assets/favicon.ico">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <style>
+        .gallery-intro {
+            text-align: center;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            gap: 28px;
+        }
+
+        .gallery-item {
+            overflow: hidden;
+            background: #fff;
+            border: 1px solid #e7e7e7;
+            border-radius: 14px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+        }
+
+        .gallery-image {
+            width: 100%;
+            height: 300px;
+            padding: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #f8fafc;
+        }
+
+        .gallery-image img {
+            display: block;
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            object-position: center;
+        }
+
+        .gallery-content {
+            padding: 22px;
+            text-align: center;
+        }
+
+        .gallery-content h3 {
+            margin: 0 0 8px;
+        }
+
+        .gallery-content p {
+            margin: 0;
+        }
+
+        @media (max-width: 991px) {
+            .gallery-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .gallery-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-image {
+                height: 260px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <a href="index.html" class="site-logo" aria-label="Alphaavolt Home">
+            <img src="Images/logo.png" alt="Alphaavolt Infratech Pvt. Ltd.">
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html" class="active">Gallery</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="contact.html" class="quote-btn">Get Quote</a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-banner">
         <div class="container">
-            <a href="index.html" class="site-logo" aria-label="Alphaavolt Home">
-                <img src="Images/logo.png" alt="Alphaavolt Infratech Pvt. Ltd.">
-            </a>
+            <h1>Product Gallery</h1>
+            <p>Explore our electrical products and integrated engineering solutions.</p>
+        </div>
+    </section>
 
-            <nav class="navbar" aria-label="Main navigation">
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-<li><a href="about.html">About</a></li>
-<li><a href="services.html">Services</a></li>
-<li><a href="products.html">Products</a></li>
-<li><a href="gallery.html" class="active">Gallery</a></li>
-<li><a href="contact.html">Contact</a></li>
-                </ul>
-            </nav>
+    <section class="gallery-page section">
+        <div class="container">
 
-            <div class="header-buttons">
-                <a href="contact.html" class="quote-btn">Get Quote</a>
-                <button class="menu-toggle" type="button"
-                        aria-label="Toggle navigation" aria-expanded="false">
-                    <i class="fa-solid fa-bars"></i>
-                </button>
+            <div class="section-title gallery-intro">
+                <span>Our Products</span>
+                <h2>Electrical Products & Systems</h2>
+                <p>
+                    All images below use the exact product-image filenames available
+                    in the website's Images/services folder.
+                </p>
+            </div>
+
+            <div class="gallery-grid">
+
+                <article class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Images/services/electrical-cables.png"
+                             alt="Electrical cables"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Electrical Cables</h3>
+                        <p>Quality cables for commercial, industrial and infrastructure applications.</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Images/services/electrical-panels.png"
+                             alt="Electrical panels"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Electrical Panels</h3>
+                        <p>Reliable control and power-distribution panel solutions.</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Images/services/switchgear.png"
+                             alt="Switchgear"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Switchgear</h3>
+                        <p>Protection and switching equipment for dependable electrical systems.</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Images/services/led-lighting.png"
+                             alt="LED lighting"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>LED Lighting</h3>
+                        <p>Energy-efficient lighting products for indoor and outdoor use.</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Images/services/fire-alarm-system.png"
+                             alt="Fire alarm system"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>Fire Alarm System</h3>
+                        <p>Fire detection and alarm products for safer buildings and facilities.</p>
+                    </div>
+                </article>
+
+                <article class="gallery-item">
+                    <div class="gallery-image">
+                        <img src="Images/services/cctv-surveillance.png"
+                             alt="CCTV surveillance system"
+                             loading="lazy">
+                    </div>
+                    <div class="gallery-content">
+                        <h3>CCTV Surveillance</h3>
+                        <p>Modern security and surveillance solutions for continuous monitoring.</p>
+                    </div>
+                </article>
+
             </div>
         </div>
-    </header>
-    <main>
+    </section>
 
-<section class="page-banner">
-    <div class="page-banner-overlay"></div>
-    <div class="container page-banner-content">
-        <span class="eyebrow">Gallery</span>
-        <h1>A View of Our Engineering Work</h1>
-        <p>Selected project and installation images across our service areas.</p>
-        <div class="breadcrumb">
-            <a href="index.html">Home</a>
-            <i class="fa-solid fa-chevron-right"></i>
-            <span>Gallery</span>
+    <section class="cta section">
+        <div class="container">
+            <div class="cta-content">
+                <div>
+                    <span>Need Product Assistance?</span>
+                    <h2>Discuss Your Requirements With Our Team</h2>
+                    <p>Contact Alphaavolt for product selection, supply and project support.</p>
+                </div>
+                <a href="contact.html" class="btn btn-primary">Send an Enquiry</a>
+            </div>
         </div>
-    </div>
-</section>
+    </section>
 
-<section class="section">
-    <div class="container">
-        <div class="filter-buttons">
-            <button class="active" data-filter="all">All</button>
-            <button data-filter="electrical">Electrical</button>
-            <button data-filter="elv">ELV</button>
-            <button data-filter="fire">Fire</button>
-            <button data-filter="civil">Civil</button>
-            <button data-filter="lighting">Lighting</button>
-        </div>
-        <div class="gallery-grid">
-<figure class="gallery-item" data-category="electrical">
-    <img src="Images/gallery/project1.jpg" alt="Electrical Installation" loading="lazy">
-    <figcaption><h3>Electrical Installation</h3><span>Electrical</span></figcaption>
-</figure>
-<figure class="gallery-item" data-category="electrical">
-    <img src="Images/gallery/project2.jpg" alt="Panel and Distribution Work" loading="lazy">
-    <figcaption><h3>Panel and Distribution Work</h3><span>Electrical</span></figcaption>
-</figure>
-<figure class="gallery-item" data-category="elv">
-    <img src="Images/gallery/project3.jpg" alt="CCTV Installation" loading="lazy">
-    <figcaption><h3>CCTV Installation</h3><span>ELV</span></figcaption>
-</figure>
-<figure class="gallery-item" data-category="fire">
-    <img src="Images/gallery/project4.jpg" alt="Fire Alarm System" loading="lazy">
-    <figcaption><h3>Fire Alarm System</h3><span>Fire</span></figcaption>
-</figure>
-<figure class="gallery-item" data-category="civil">
-    <img src="Images/gallery/project5.jpg" alt="Civil Project Work" loading="lazy">
-    <figcaption><h3>Civil Project Work</h3><span>Civil</span></figcaption>
-</figure>
-<figure class="gallery-item" data-category="lighting">
-    <img src="Images/gallery/project6.jpg" alt="Lighting Installation" loading="lazy">
-    <figcaption><h3>Lighting Installation</h3><span>Lighting</span></figcaption>
-</figure></div>
-    </div>
-</section>
+</main>
 
-    </main>
-    <footer class="footer">
+<footer class="footer">
     <div class="container">
+
         <div class="footer-grid">
+
             <div class="footer-col">
-                <img src="Images/logo.png" class="footer-logo" alt="Alphaavolt logo">
-                <p>Alphaavolt Infratech Pvt. Ltd. provides reliable civil, electrical,
-                ELV and engineering solutions with a commitment to quality, safety and
-                customer satisfaction.</p>
+                <img src="Images/logo.png"
+                     class="footer-logo"
+                     alt="Alphaavolt Logo">
+                <p>
+                    Alphaavolt Infratech Pvt. Ltd. provides Civil, Electrical,
+                    ELV and Engineering solutions with a commitment to quality,
+                    safety and customer satisfaction.
+                </p>
             </div>
+
             <div class="footer-col">
                 <h3>Quick Links</h3>
                 <ul>
@@ -113,43 +262,67 @@
                     <li><a href="services.html">Services</a></li>
                     <li><a href="products.html">Products</a></li>
                     <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
                     <li><a href="contact.html">Contact</a></li>
                 </ul>
             </div>
+
             <div class="footer-col">
-                <h3>Our Services</h3>
+                <h3>Products</h3>
                 <ul>
-                    <li>Electrical Works</li>
-                    <li>Civil Works</li>
-                    <li>ELV System Integration</li>
+                    <li>Electrical Cables</li>
+                    <li>Electrical Panels</li>
+                    <li>Switchgear</li>
+                    <li>LED Lighting</li>
                     <li>Fire Alarm Systems</li>
                     <li>CCTV Surveillance</li>
-                    <li>Electrical Product Supply</li>
                 </ul>
             </div>
+
             <div class="footer-col">
                 <h3>Contact Us</h3>
-                <p><i class="fa-solid fa-location-dot"></i>
-                Vantika Vihar, Chandan Road,<br>Sugamau, Indira Nagar,<br>Lucknow – 226016</p>
-                <p><i class="fa-solid fa-phone"></i>
-                <a href="tel:+919975645311">+91 99756 45311</a></p>
-                <p><i class="fa-solid fa-envelope"></i>
-                <a href="mailto:contact@alphaavolt.com">contact@alphaavolt.com</a></p>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Vantika Vihar, Chandan Road,<br>
+                    Sugamau, Indira Nagar,<br>
+                    Lucknow – 226016
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919975645311">+91 99756 45311</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:contact@alphaavolt.com">contact@alphaavolt.com</a>
+                </p>
             </div>
+
         </div>
-        <div class="copyright">© 2026 Alphaavolt Infratech Pvt. Ltd. All Rights Reserved.</div>
+
+        <hr>
+
+        <div class="copyright">
+            &copy; 2026 Alphaavolt Infratech Pvt. Ltd. All Rights Reserved.
+        </div>
+
     </div>
 </footer>
 
-<a href="https://wa.me/919975645311" class="whatsapp-float"
-   target="_blank" rel="noopener" aria-label="Contact Alphaavolt on WhatsApp">
-    <i class="fa-brands fa-whatsapp"></i>
+<a href="https://wa.me/919975645311?text=Hello%20Alphaavolt%2C%20I%20would%20like%20to%20know%20more%20about%20your%20products."
+   class="whatsapp-float"
+   target="_blank"
+   rel="noopener noreferrer"
+   aria-label="Chat with Alphaavolt on WhatsApp">
+    <i class="fab fa-whatsapp"></i>
 </a>
 
-<button id="backToTop" type="button" aria-label="Back to top">
+<button id="backToTop" type="button" aria-label="Go to top">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
 <script src="JS/main.js"></script>
-    </body>
-    </html>
+</body>
+</html>

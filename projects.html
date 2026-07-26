@@ -1,799 +1,513 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Projects | Alphaavolt Infratech Pvt. Ltd.</title>
+    <meta name="description"
+          content="Alphaavolt Infratech Pvt. Ltd. is a growing engineering company ready to execute civil, electrical, ELV, fire protection and infrastructure projects.">
 
-<title>Projects | Alphaavolt Infratech Pvt. Ltd.</title>
+    <link rel="icon" href="Images/logo.png">
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/animations.css">
+    <link rel="stylesheet" href="CSS/responsive.css">
 
-<meta name="description"
-content="Explore Alphaavolt's completed engineering, electrical, civil and infrastructure projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+          rel="stylesheet">
 
-<link rel="stylesheet" href="CSS /style.CSS ">
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
-<link href="https://fonts.googleapis.com/CSS 2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .projects-status {
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 48px 36px;
+            text-align: center;
+            background: #ffffff;
+            border: 1px solid #e8edf3;
+            border-radius: 18px;
+            box-shadow: 0 14px 38px rgba(0, 0, 0, 0.08);
+        }
 
-<link rel="stylesheet"
-href="https://cdnJS.cloudflare.com/ajax/libs/font-awesome/6.6.0/CSS /all.min.CSS ">
+        .projects-status .status-icon {
+            width: 88px;
+            height: 88px;
+            margin: 0 auto 24px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            background: #f1f6fb;
+            font-size: 38px;
+        }
 
+        .projects-status h2 {
+            margin-bottom: 16px;
+        }
+
+        .projects-status p {
+            max-width: 720px;
+            margin: 0 auto 24px;
+        }
+
+        .capability-grid,
+        .process-grid,
+        .industry-grid {
+            display: grid;
+            gap: 24px;
+        }
+
+        .capability-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .process-grid {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+
+        .industry-grid {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+
+        .capability-card,
+        .process-card,
+        .industry-card {
+            padding: 28px;
+            background: #ffffff;
+            border: 1px solid #e8edf3;
+            border-radius: 14px;
+            text-align: center;
+        }
+
+        .capability-card i,
+        .process-card i,
+        .industry-card i {
+            margin-bottom: 16px;
+            font-size: 34px;
+        }
+
+        .process-number {
+            width: 42px;
+            height: 42px;
+            margin: 0 auto 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-weight: 700;
+            background: #f1f6fb;
+        }
+
+        .quality-box {
+            max-width: 950px;
+            margin: 0 auto;
+            padding: 36px;
+            background: #f8fafc;
+            border-radius: 16px;
+        }
+
+        .quality-list {
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 16px 24px;
+            margin-top: 24px;
+            padding: 0;
+            list-style: none;
+        }
+
+        .quality-list li {
+            display: flex;
+            gap: 12px;
+            align-items: flex-start;
+        }
+
+        .quality-list i {
+            margin-top: 4px;
+        }
+
+        @media (max-width: 991px) {
+            .capability-grid,
+            .industry-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+
+            .process-grid {
+                grid-template-columns: repeat(2, minmax(0, 1fr));
+            }
+        }
+
+        @media (max-width: 600px) {
+            .capability-grid,
+            .process-grid,
+            .industry-grid,
+            .quality-list {
+                grid-template-columns: 1fr;
+            }
+
+            .projects-status {
+                padding: 34px 22px;
+            }
+        }
+    </style>
 </head>
-<!-- Floating WhatsApp Button -->
-<a href="https://wa.me/919975645311?text=Hello%20Alphaavolt%2C%20I%20would%20like%20to%20know%20more%20about%20your%20services."
+
+<body>
+
+<header class="header">
+    <div class="container">
+
+        <a href="index.html" class="site-logo" aria-label="Alphaavolt Home">
+            <img src="Images/logo.png" alt="Alphaavolt Infratech Pvt. Ltd.">
+        </a>
+
+        <nav class="navbar">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="gallery.html">Gallery</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+
+        <div class="header-buttons">
+            <a href="contact.html" class="quote-btn">Get Quote</a>
+
+            <button class="menu-toggle"
+                    type="button"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+        </div>
+
+    </div>
+</header>
+
+<main>
+
+    <section class="page-banner">
+        <div class="container">
+            <h1>Projects</h1>
+            <p>Building a strong future through quality engineering and dependable execution.</p>
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="projects-status">
+
+                <div class="status-icon">
+                    <i class="fa-solid fa-diagram-project"></i>
+                </div>
+
+                <span class="section-subtitle">Our Project Portfolio</span>
+
+                <h2>Projects Coming Soon</h2>
+
+                <p>
+                    Alphaavolt Infratech Pvt. Ltd. is a newly established engineering company.
+                    We have not yet completed any projects under the company name, and we do not
+                    display fabricated project records.
+                </p>
+
+                <p>
+                    Our team is ready to undertake civil, electrical, ELV, fire protection,
+                    CCTV surveillance, electrical product supply and infrastructure assignments
+                    with a strong focus on safety, quality and timely execution.
+                </p>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Discuss Your Project
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Our Capabilities</span>
+                <h2>Ready to Execute Your Next Project</h2>
+                <p>
+                    We are prepared to support commercial, industrial and infrastructure
+                    requirements through organised planning and responsible execution.
+                </p>
+            </div>
+
+            <div class="capability-grid">
+
+                <article class="capability-card">
+                    <i class="fa-solid fa-bolt"></i>
+                    <h3>Electrical Works</h3>
+                    <p>HT/LT systems, electrical panels, cabling, lighting and power distribution.</p>
+                </article>
+
+                <article class="capability-card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Civil Works</h3>
+                    <p>Civil construction, site development and supporting infrastructure works.</p>
+                </article>
+
+                <article class="capability-card">
+                    <i class="fa-solid fa-network-wired"></i>
+                    <h3>ELV Systems</h3>
+                    <p>Integrated low-voltage systems for communication, safety and automation.</p>
+                </article>
+
+                <article class="capability-card">
+                    <i class="fa-solid fa-fire-extinguisher"></i>
+                    <h3>Fire Protection</h3>
+                    <p>Fire alarm, detection and protection solutions for safer facilities.</p>
+                </article>
+
+                <article class="capability-card">
+                    <i class="fa-solid fa-video"></i>
+                    <h3>CCTV Surveillance</h3>
+                    <p>Security-camera and surveillance systems for continuous monitoring.</p>
+                </article>
+
+                <article class="capability-card">
+                    <i class="fa-solid fa-boxes-stacked"></i>
+                    <h3>Product Supply</h3>
+                    <p>Supply of electrical materials, cables, lighting, panels and switchgear.</p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Industries We Serve</span>
+                <h2>Solutions for Multiple Sectors</h2>
+            </div>
+
+            <div class="industry-grid">
+
+                <article class="industry-card">
+                    <i class="fa-solid fa-industry"></i>
+                    <h3>Industrial Facilities</h3>
+                </article>
+
+                <article class="industry-card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Commercial Buildings</h3>
+                </article>
+
+                <article class="industry-card">
+                    <i class="fa-solid fa-hospital"></i>
+                    <h3>Healthcare Facilities</h3>
+                </article>
+
+                <article class="industry-card">
+                    <i class="fa-solid fa-school"></i>
+                    <h3>Educational Institutions</h3>
+                </article>
+
+                <article class="industry-card">
+                    <i class="fa-solid fa-warehouse"></i>
+                    <h3>Warehouses</h3>
+                </article>
+
+                <article class="industry-card">
+                    <i class="fa-solid fa-city"></i>
+                    <h3>Infrastructure Projects</h3>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="section-title">
+                <span>Our Process</span>
+                <h2>How We Plan to Deliver Projects</h2>
+            </div>
+
+            <div class="process-grid">
+
+                <article class="process-card">
+                    <div class="process-number">1</div>
+                    <h3>Requirement Review</h3>
+                    <p>We study the site, drawings, scope and technical requirements.</p>
+                </article>
+
+                <article class="process-card">
+                    <div class="process-number">2</div>
+                    <h3>Planning</h3>
+                    <p>We prepare a practical execution plan, material schedule and timeline.</p>
+                </article>
+
+                <article class="process-card">
+                    <div class="process-number">3</div>
+                    <h3>Execution</h3>
+                    <p>Work is carried out with close supervision and safety controls.</p>
+                </article>
+
+                <article class="process-card">
+                    <div class="process-number">4</div>
+                    <h3>Testing & Handover</h3>
+                    <p>Systems are checked, documented and handed over responsibly.</p>
+                </article>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="section">
+        <div class="container">
+
+            <div class="quality-box">
+
+                <span class="section-subtitle">Our Commitment</span>
+
+                <h2>Quality, Safety and Honest Communication</h2>
+
+                <p>
+                    As a new company, our focus is to establish trust through responsible work,
+                    clear communication and dependable service from the first project onward.
+                </p>
+
+                <ul class="quality-list">
+                    <li><i class="fa-solid fa-circle-check"></i><span>Clear project scope and transparent communication</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span>Quality materials and appropriate engineering practices</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span>Safety-focused site execution</span></li>
+                    <li><i class="fa-solid fa-circle-check"></i><span>Timely progress reporting and responsible handover</span></li>
+                </ul>
+
+            </div>
+
+        </div>
+    </section>
+
+    <section class="cta section">
+        <div class="container">
+
+            <div class="cta-content">
+
+                <div>
+                    <span>Start a Project With Us</span>
+                    <h2>Looking for a Reliable Engineering Partner?</h2>
+                    <p>
+                        Share your project requirements with Alphaavolt and let us prepare
+                        a suitable engineering and supply solution.
+                    </p>
+                </div>
+
+                <a href="contact.html" class="btn btn-primary">
+                    Request a Consultation
+                </a>
+
+            </div>
+
+        </div>
+    </section>
+
+</main>
+
+<footer class="footer">
+    <div class="container">
+
+        <div class="footer-grid">
+
+            <div class="footer-col">
+                <img src="Images/logo.png"
+                     class="footer-logo"
+                     alt="Alphaavolt Logo">
+                <p>
+                    Alphaavolt Infratech Pvt. Ltd. provides Civil, Electrical,
+                    ELV and Engineering solutions with a commitment to quality,
+                    safety and customer satisfaction.
+                </p>
+            </div>
+
+            <div class="footer-col">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="gallery.html">Gallery</a></li>
+                    <li><a href="projects.html">Projects</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Our Services</h3>
+                <ul>
+                    <li>Electrical Works</li>
+                    <li>Civil Works</li>
+                    <li>ELV System Integration</li>
+                    <li>Fire Alarm Systems</li>
+                    <li>CCTV Surveillance</li>
+                    <li>Electrical Product Supply</li>
+                </ul>
+            </div>
+
+            <div class="footer-col">
+                <h3>Contact Us</h3>
+
+                <p>
+                    <i class="fa-solid fa-location-dot"></i>
+                    Vantika Vihar, Chandan Road,<br>
+                    Sugamau, Indira Nagar,<br>
+                    Lucknow – 226016
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-phone"></i>
+                    <a href="tel:+919975645311">+91 99756 45311</a>
+                </p>
+
+                <p>
+                    <i class="fa-solid fa-envelope"></i>
+                    <a href="mailto:contact@alphaavolt.com">contact@alphaavolt.com</a>
+                </p>
+            </div>
+
+        </div>
+
+        <hr>
+
+        <div class="copyright">
+            &copy; 2026 Alphaavolt Infratech Pvt. Ltd. All Rights Reserved.
+        </div>
+
+    </div>
+</footer>
+
+<a href="https://wa.me/919975645311?text=Hello%20Alphaavolt%2C%20I%20would%20like%20to%20discuss%20a%20project."
    class="whatsapp-float"
    target="_blank"
    rel="noopener noreferrer"
    aria-label="Chat with Alphaavolt on WhatsApp">
-
-    <svg viewBox="0 0 32 32" aria-hidden="true">
-        <path fill="currentColor"
-            d="M16.04 2.003c-7.72 0-13.99 6.26-13.99 13.98 0 2.46.64 4.86 1.86 6.97L1.94 30l7.22-1.89a13.94 13.94 0 0 0 6.87 1.75h.01c7.71 0 13.99-6.27 13.99-13.99S23.75 2.003 16.04 2.003zm0 25.5h-.01a11.6 11.6 0 0 1-5.91-1.62l-.42-.25-4.29 1.13 1.15-4.18-.27-.43a11.59 11.59 0 1 1 9.75 5.35zm6.36-8.68c-.35-.18-2.06-1.02-2.38-1.13-.32-.12-.55-.18-.78.17-.23.35-.9 1.13-1.1 1.36-.2.23-.41.26-.76.09-.35-.18-1.47-.54-2.8-1.73a10.48 10.48 0 0 1-1.94-2.41c-.2-.35-.02-.54.15-.71.16-.16.35-.41.52-.61.17-.2.23-.35.35-.58.12-.23.06-.44-.03-.61-.09-.18-.78-1.89-1.07-2.59-.28-.68-.57-.59-.78-.6h-.67c-.23 0-.61.09-.93.44-.32.35-1.22 1.19-1.22 2.91 0 1.71 1.25 3.37 1.42 3.6.18.23 2.46 3.76 5.96 5.27.83.36 1.48.57 1.99.73.84.27 1.6.23 2.2.14.67-.1 2.06-.84 2.35-1.65.29-.81.29-1.51.2-1.65-.08-.15-.31-.23-.66-.41z"/>
-    </svg>
+    <i class="fab fa-whatsapp"></i>
 </a>
 
-<!-- Back To Top Button -->
 <button id="backToTop" type="button" aria-label="Go to top">
     <i class="fa-solid fa-arrow-up"></i>
 </button>
 
-<body>
-
-<!--================ HEADER =================-->
-
-<header class="header">
-
-<div class="container">
-
-<a href="index.html" class="logo">
-
-<img src="Images/logo.png" alt="Alphaavolt">
-
-</a>
-
-<nav class="navbar">
-
-<ul>
-
-<li><a href="index.html">Home</a></li>
-
-<li><a href="about.html">About</a></li>
-
-<li><a href="services.html">Services</a></li>
-
-<li><a class="active" href="projects.html">Projects</a></li>
-
-<li><a href="products.html">Products</a></li>
-
-<li><a href="gallery.html">Gallery</a></li>
-
-<li><a href="contact.html">Contact</a></li>
-
-</ul>
-
-</nav>
-
-<a href="contact.html" class="quote-btn">
-
-Get Quote
-
-</a>
-
-</div>
-
-</header>
-
-<!--================ PAGE BANNER =================-->
-
-<section class="page-banner">
-
-<div class="overlay"></div>
-
-<div class="container">
-
-
-
-<p>
-
-
-
-<span>Projects</span>
-
-</p>
-
-</div>
-
-</section>
-
-<!--================ INTRO =================-->
-
-<section class="section">
-
-<div class="container">
-
-<div class="section-heading">
-
-<span class="section-subtitle">
-
-Our Portfolio
-
-</span>
-
-<h2 class="section-title">
-
-Engineering Projects That Deliver Results
-
-</h2>
-
-<p>
-
-Alphaavolt has successfully executed projects across
-industrial, commercial and infrastructure sectors with
-a commitment to quality, safety and timely delivery.
-
-</p>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ PROJECT GRID =================-->
-
-<section class="projects section">
-
-<div class="container">
-
-<div class="projects-grid">
-
-<div class="project-card">
-
-<img src="Images/project1.jpg" alt="Civil">
-
-<div class="project-content">
-
-<span>Civil Construction</span>
-
-<h3>Industrial Factory Building</h3>
-
-<p>
-
-Complete civil construction including structural,
-foundation and finishing works.
-
-</p>
-
-<a href="#">
-
-View Details
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img src="Images/project2.jpg" alt="Electrical">
-
-<div class="project-content">
-
-<span>Electrical Engineering</span>
-
-<h3>HT/LT Distribution System</h3>
-
-<p>
-
-Installation of transformers,
-panels and electrical distribution systems.
-
-</p>
-
-<a href="#">
-
-View Details
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img src="Images/project3.jpg" alt="ELV">
-
-<div class="project-content">
-
-<span>ELV Solutions</span>
-
-<h3>CCTV & Fire Alarm System</h3>
-
-<p>
-
-Integrated surveillance,
-access control and fire alarm installation.
-
-</p>
-
-<a href="#">
-
-View Details
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img src="Images/project4.jpg" alt="Commercial">
-
-<div class="project-content">
-
-<span>Commercial</span>
-
-<h3>Office Electrical Infrastructure</h3>
-
-<p>
-
-Complete electrical and networking solution
-for corporate offices.
-
-</p>
-
-<a href="#">
-
-View Details
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img src="Images/project5.jpg" alt="Warehouse">
-
-<div class="project-content">
-
-<span>Warehouse</span>
-
-<h3>Warehouse Power Distribution</h3>
-
-<p>
-
-Industrial lighting,
-power panels and cable management.
-
-</p>
-
-<a href="#">
-
-View Details
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-<div class="project-card">
-
-<img src="Images/project6.jpg" alt="Infrastructure">
-
-<div class="project-content">
-
-<span>Infrastructure</span>
-
-<h3>Infrastructure Development</h3>
-
-<p>
-
-Road works,
-drainage,
-electrical utilities and site development.
-
-</p>
-
-<a href="#">
-
-View Details
-
-<i class="fa-solid fa-arrow-right"></i>
-
-</a>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section><!--================ PROJECT CATEGORIES =================-->
-
-<section class="project-categories section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-subtitle">
-                Project Categories
-            </span>
-
-            <h2 class="section-title">
-                Expertise Across Multiple Engineering Sectors
-            </h2>
-
-        </div>
-
-        <div class="category-grid">
-
-            <div class="category-card">
-                <i class="fa-solid fa-building"></i>
-                <h3>Civil Construction</h3>
-                <p>Industrial, commercial and institutional construction projects.</p>
-            </div>
-
-            <div class="category-card">
-                <i class="fa-solid fa-bolt"></i>
-                <h3>Electrical Projects</h3>
-                <p>HT/LT installations, power distribution and lighting systems.</p>
-            </div>
-
-            <div class="category-card">
-                <i class="fa-solid fa-network-wired"></i>
-                <h3>ELV Systems</h3>
-                <p>CCTV, Fire Alarm, Access Control and Networking solutions.</p>
-            </div>
-
-            <div class="category-card">
-                <i class="fa-solid fa-city"></i>
-                <h3>Infrastructure</h3>
-                <p>Roads, utilities, drainage and complete infrastructure works.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-
-<!--================ PROJECT PROCESS =================-->
-
-<section class="project-process section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-subtitle">
-                Execution Process
-            </span>
-
-            <h2 class="section-title">
-                Our Project Delivery Approach
-            </h2>
-
-        </div>
-
-        <div class="process-grid">
-
-            <div class="process-card">
-                <div class="step">01</div>
-                <h3>Planning</h3>
-                <p>Requirement analysis, site survey and project planning.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="step">02</div>
-                <h3>Design</h3>
-                <p>Engineering drawings, BOQ preparation and approvals.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="step">03</div>
-                <h3>Execution</h3>
-                <p>Professional construction, installation and supervision.</p>
-            </div>
-
-            <div class="process-card">
-                <div class="step">04</div>
-                <h3>Handover</h3>
-                <p>Testing, commissioning, documentation and final delivery.</p>
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ CLIENT TESTIMONIALS =================-->
-
-<section class="project-testimonials section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-subtitle">
-                Client Feedback
-            </span>
-
-            <h2 class="section-title">
-                What Our Clients Say
-            </h2>
-
-        </div>
-
-        <div class="testimonial-grid">
-
-            <div class="testimonial-card">
-
-                <i class="fa-solid fa-quote-left"></i>
-
-                <p>
-                    Alphaavolt delivered our industrial electrical project
-                    on time with exceptional workmanship.
-                </p>
-
-                <h4>Industrial Client</h4>
-
-            </div>
-
-            <div class="testimonial-card">
-
-                <i class="fa-solid fa-quote-left"></i>
-
-                <p>
-                    Excellent coordination, quality standards and
-                    professional project management throughout.
-                </p>
-
-                <h4>Commercial Developer</h4>
-
-            </div>
-
-            <div class="testimonial-card">
-
-                <i class="fa-solid fa-quote-left"></i>
-
-                <p>
-                    Highly recommended for turnkey engineering
-                    and infrastructure projects.
-                </p>
-
-                <h4>Infrastructure Consultant</h4>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ PROJECT CTA =================-->
-
-<section class="project-cta">
-
-    <div class="container">
-
-        <h2>
-            Have an Engineering Project in Mind?
-        </h2>
-
-        <p>
-            Partner with Alphaavolt Infratech Pvt. Ltd. for reliable,
-            safe and high-quality engineering solutions.
-        </p>
-
-        <a href="contact.html" class="btn-primary">
-            Start Your Project
-        </a>
-
-    </div>
-
-</section><!--================ PROJECT GALLERY =================-->
-
-<section class="project-gallery section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-subtitle">Project Gallery</span>
-
-            <h2 class="section-title">
-                Highlights From Our Recent Work
-            </h2>
-
-        </div>
-
-        <div class="gallery-grid">
-
-            <div class="gallery-item">
-                <img src="Images/project7.jpg" alt="Project 1">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images/project8.jpg" alt="Project 2">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images/project9.jpg" alt="Project 3">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images/project10.jpg" alt="Project 4">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images/project11.jpg" alt="Project 5">
-            </div>
-
-            <div class="gallery-item">
-                <img src="Images/project12.jpg" alt="Project 6">
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ QUALITY & SAFETY =================-->
-
-<section class="quality section">
-
-    <div class="container">
-
-        <div class="section-heading">
-
-            <span class="section-subtitle">
-                Quality Commitment
-            </span>
-
-            <h2 class="section-title">
-                Safety & Quality Standards
-            </h2>
-
-        </div>
-
-        <div class="quality-grid">
-
-            <div class="quality-card">
-
-                <i class="fa-solid fa-shield-halved"></i>
-
-                <h3>Safety First</h3>
-
-                <p>
-                    Every project follows strict safety procedures and
-                    industry regulations.
-                </p>
-
-            </div>
-
-            <div class="quality-card">
-
-                <i class="fa-solid fa-award"></i>
-
-                <h3>Quality Assurance</h3>
-
-                <p>
-                    Continuous inspections ensure superior workmanship
-                    and reliable performance.
-                </p>
-
-            </div>
-
-            <div class="quality-card">
-
-                <i class="fa-solid fa-clipboard-check"></i>
-
-                <h3>Project Compliance</h3>
-
-                <p>
-                    Documentation, testing and commissioning are completed
-                    before project handover.
-                </p>
-
-            </div>
-
-        </div>
-
-    </div>
-
-</section>
-
-<!--================ FAQ =================-->
-
-<section class="faq section">
-
-<div class="container">
-
-<div class="section-heading">
-
-<span class="section-subtitle">
-
-Frequently Asked Questions
-
-</span>
-
-<h2 class="section-title">
-
-Need More Information?
-
-</h2>
-
-</div>
-
-<div class="faq-container">
-
-<div class="faq-item">
-
-<button class="faq-question">
-
-What types of projects do you undertake?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-
-We execute civil, electrical, ELV,
-industrial, commercial and infrastructure projects.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-question">
-
-Can you handle turnkey engineering projects?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-
-Yes. We manage complete turnkey projects
-from planning through commissioning.
-
-</p>
-
-</div>
-
-</div>
-
-<div class="faq-item">
-
-<button class="faq-question">
-
-Do you provide maintenance after completion?
-
-<i class="fa-solid fa-plus"></i>
-
-</button>
-
-<div class="faq-answer">
-
-<p>
-
-Yes. We offer maintenance and technical support
-based on project requirements.
-
-</p>
-
-</div>
-
-</div>
-
-</div>
-
-</div>
-
-</section>
-
-<!--================ PROJECT ENQUIRY =================-->
-
-<section class="service-contact">
-
-<div class="container">
-
-<div class="contact-left">
-
-<span>Let's Build Together</span>
-
-<h2>
-
-Start Your Next Project
-
-</h2>
-
-<p>
-
-Our engineering team is ready to discuss your
-requirements and deliver reliable solutions
-tailored to your project.
-
-</p>
-
-</div>
-
-<div class="contact-right">
-
-<form>
-
-<input type="text" placeholder="Your Name">
-
-<input type="email" placeholder="Email Address">
-
-<input type="tel" placeholder="Phone Number">
-
-<input type="text" placeholder="Project Location">
-
-<select>
-
-<option>Project Type</option>
-
-<option>Civil Works</option>
-
-<option>Electrical Works</option>
-
-<option>ELV Systems</option>
-
-<option>Infrastructure</option>
-
-</select>
-
-<textarea rows="5"
-placeholder="Describe your project"></textarea>
-
-<button class="btn-primary">
-
-Submit Project Enquiry
-
-</button>
-
-</form>
-
-</div>
-
-</div>
-
-</section><div class="copyright">
-<p>
-© 2026 Alphaavolt Infratech Pvt. Ltd. All Rights Reserved.
-</p>
-</div>
+<script src="JS/main.js"></script>
+</body>
+</html>
