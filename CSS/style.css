@@ -1031,7 +1031,7 @@ p {
     .site-logo,
     .logo {
         width: 245px;
-        height: 72px;
+        height: 210px;
     }
 
     .menu-toggle {
@@ -1162,7 +1162,7 @@ p {
     .site-logo,
     .logo {
         width: 205px;
-        height: 66px;
+        height: 200px;
     }
 
     .navbar {
@@ -1191,7 +1191,7 @@ p {
 @media (max-width: 768px) {
     .site-logo,
     .logo {
-        width: 220px;
+        width: 300px;
         height: auto;
     }
 
@@ -1217,7 +1217,7 @@ p {
     .logo,
     .site-logo {
         width: 210px !important;
-        height: 70px !important;
+        height: 75px !important;
         display: flex;
         align-items: center;
         flex-shrink: 0;
