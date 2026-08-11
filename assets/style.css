@@ -13,3 +13,65 @@
 .footer-logo{display:block;width:310px;max-width:100%;height:auto;object-fit:contain;margin:0 0 18px;filter:none}
 @media(max-width:1100px){.brand-logo{min-width:300px}.brand-logo img{width:285px;height:200px}}
 @media(max-width:760px){.brand-logo{min-width:0}.brand-logo img{width:235px;height:200px}.footer-logo{width:260px}}
+/* ===== ALPHAAVOLT HEADER LOGO FIX ===== */
+
+.brand.brand-logo {
+    min-width: 310px;
+    width: 310px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.brand.brand-logo img {
+    width: 300px !important;
+    height: 90px !important;
+    max-width: 100%;
+    object-fit: contain !important;
+    object-position: left center;
+    display: block !important;
+}
+
+/* Footer full logo */
+.footer-logo {
+    width: 300px;
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin-bottom: 18px;
+}
+
+/* Tablet */
+@media (max-width: 1100px) {
+    .brand.brand-logo {
+        min-width: 240px;
+        width: 240px;
+    }
+
+    .brand.brand-logo img {
+        width: 230px !important;
+        height: 75px !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 760px) {
+    .brand.brand-logo {
+        min-width: 230px;
+        width: 230px;
+    }
+
+    .brand.brand-logo img {
+        width: 220px !important;
+        height: 72px !important;
+    }
+
+    .header .container {
+        gap: 10px;
+    }
+
+    .menu-btn {
+        flex-shrink: 0;
+    }
+}
