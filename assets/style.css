@@ -226,4 +226,31 @@
         font-size: 16px;
         line-height: 1.65;
     }
+}/* FINAL HAMBURGER ICON FIX */
+@media (max-width: 760px) {
+
+    .menu-btn {
+        position: relative;
+        display: flex !important;
+        width: 52px;
+        height: 52px;
+        align-items: center;
+        justify-content: center;
+        background: #eef4fc;
+        border: none;
+        border-radius: 14px;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .menu-btn::before {
+        content: "";
+        display: block;
+        width: 25px;
+        height: 18px;
+        background:
+            linear-gradient(#061b3a,#061b3a) 0 0 / 100% 3px no-repeat,
+            linear-gradient(#061b3a,#061b3a) 0 50% / 100% 3px no-repeat,
+            linear-gradient(#061b3a,#061b3a) 0 100% / 100% 3px no-repeat;
+    }
 }
