@@ -253,4 +253,25 @@
             linear-gradient(#061b3a,#061b3a) 0 50% / 100% 3px no-repeat,
             linear-gradient(#061b3a,#061b3a) 0 100% / 100% 3px no-repeat;
     }
+} /* ===== FOOTER ALIGNMENT FIX ===== */
+
+/* Company description */
+.footer-brand p {
+    text-align: center;
+    white-space: nowrap;
+    width: 100%;
+}
+
+/* Copyright */
+.copyright {
+    text-align: center;
+    width: 100%;
+}
+
+/* Keep description responsive on smaller screens */
+@media (max-width: 760px) {
+    .footer-brand p {
+        white-space: normal;
+        text-align: center;
+    }
 }
