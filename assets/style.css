@@ -593,16 +593,16 @@
 .header .brand.brand-logo {
     display: flex;
     align-items: center;
-    width: 320px;
-    min-width: 320px;
+    width: 420px;
+    min-width: 420px;
     height: 100%;
     flex-shrink: 0;
 }
 
 .header .brand.brand-logo img {
     display: block;
-    width: 300px;
-    height: 105px;
+    width: 400px;
+    height: 110px;
     max-width: none;
     object-fit: contain;
     object-position: left center;
@@ -677,4 +677,5 @@
         max-width: 64vw;
     }
 }
+
 
