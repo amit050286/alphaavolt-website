@@ -679,3 +679,31 @@
 }
 
 
+
+/* ===== LOGO SIZE FINAL OVERRIDE ===== */
+
+@media (min-width: 1101px) {
+
+    .header {
+        height: 140px !important;
+    }
+
+    .header .brand.brand-logo {
+        width: 400px !important;
+        min-width: 400px !important;
+        height: 140px !important;
+        overflow: visible !important;
+    }
+
+    .header .brand.brand-logo img {
+        width: 300px !important;
+        height: auto !important;
+        max-width: none !important;
+        max-height: none !important;
+        object-fit: initial !important;
+        display: block !important;
+    }
+}
+
+/* ===== END LOGO SIZE FINAL OVERRIDE ===== */
+
