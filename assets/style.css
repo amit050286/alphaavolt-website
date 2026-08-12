@@ -654,3 +654,36 @@
 }
 
 
+
+/* Header logo matched to footer logo */
+.header .brand-logo img {
+    width: 180px !important;
+    height: auto !important;
+    max-height: none !important;
+    object-fit: contain !important;
+}
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .header .brand-logo img {
+        width: 160px !important;
+        height: auto !important;
+    }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+    .header .brand-logo img {
+        width: 140px !important;
+        height: auto !important;
+    }
+}
+
+/* Small mobile */
+@media (max-width: 480px) {
+    .header .brand-logo img {
+        width: 125px !important;
+        height: auto !important;
+    }
+}
+
