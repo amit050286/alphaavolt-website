@@ -601,3 +601,55 @@
     }
 }
 
+
+/* =========================================================
+   ALPHAAVOLT HEADER LOGO - ENLARGED
+   ========================================================= */
+
+.header .brand-logo {
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.header .brand-logo img {
+    width: 145px !important;
+    height: 100px !important;
+    max-width: none !important;
+    object-fit: contain;
+    display: block;
+}
+
+/* Tablet */
+
+@media (max-width: 1024px) {
+
+    .header .brand-logo img {
+        width: 130px !important;
+        height: 90px !important;
+    }
+
+}
+
+/* Mobile */
+
+@media (max-width: 768px) {
+
+    .header .brand-logo img {
+        width: 115px !important;
+        height: 78px !important;
+    }
+
+}
+
+/* Small Mobile */
+
+@media (max-width: 480px) {
+
+    .header .brand-logo img {
+        width: 105px !important;
+        height: 72px !important;
+    }
+
+}
+
