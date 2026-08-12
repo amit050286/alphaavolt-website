@@ -687,3 +687,100 @@
     }
 }
 
+/* ===== FINAL ALPHAAVOLT LOGO CONTROL ===== */
+
+/* Desktop header */
+.header {
+    height: 118px !important;
+}
+
+.header .brand.brand-logo {
+    width: 320px !important;
+    min-width: 320px !important;
+    height: 118px !important;
+    display: flex !important;
+    align-items: center !important;
+    flex-shrink: 0 !important;
+}
+
+.header .brand.brand-logo img {
+    width: 300px !important;
+    height: 105px !important;
+    max-width: none !important;
+    max-height: 105px !important;
+    object-fit: contain !important;
+    object-position: left center !important;
+    display: block !important;
+    filter: none !important;
+}
+
+/* Footer logo */
+.footer-logo {
+    width: 300px !important;
+    max-width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+}
+
+
+/* Tablet */
+@media (max-width: 1100px) {
+
+    .header .brand.brand-logo {
+        width: 250px !important;
+        min-width: 250px !important;
+    }
+
+    .header .brand.brand-logo img {
+        width: 240px !important;
+        height: 90px !important;
+        max-height: 90px !important;
+    }
+}
+
+
+/* Mobile */
+@media (max-width: 760px) {
+
+    .header {
+        height: 86px !important;
+    }
+
+    .header .container {
+        height: 86px !important;
+    }
+
+    .header .brand.brand-logo {
+        width: 220px !important;
+        min-width: 0 !important;
+        height: 86px !important;
+        flex: 0 1 220px !important;
+    }
+
+    .header .brand.brand-logo img {
+        width: 210px !important;
+        max-width: 68vw !important;
+        height: 76px !important;
+        max-height: 76px !important;
+    }
+}
+
+
+/* Small phones */
+@media (max-width: 480px) {
+
+    .header .brand.brand-logo {
+        width: 190px !important;
+        flex-basis: 190px !important;
+    }
+
+    .header .brand.brand-logo img {
+        width: 185px !important;
+        max-width: 64vw !important;
+        height: 70px !important;
+        max-height: 70px !important;
+    }
+}
+
+/* ===== END FINAL ALPHAAVOLT LOGO CONTROL ===== */
+
